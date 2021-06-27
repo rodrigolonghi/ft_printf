@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:01 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/06/23 20:04:09 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/06/25 19:27:53 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
-# include "libft.h"
+# include "./libft/libft.h"
 
 int	ft_printf(const char *str, ...);
 
