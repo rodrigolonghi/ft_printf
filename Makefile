@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/23 19:44:12 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/06/25 19:43:35 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/06/28 23:08:44 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,8 @@ FLAG = -Wall -Wextra -Werror
 
 NAME = libftprintf.a
 
-FT = ft_printf.o
+FT = ft_printf.o \
+	ft_c_case.o
 
 all: $(NAME)
 
