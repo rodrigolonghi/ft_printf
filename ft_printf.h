@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:01 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/06/29 23:56:09 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/06/30 23:48:34 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdarg.h>
 # include "./libft/libft.h"
 
-int		ft_printf(const char *str, ...);
-void	ft_c_case(const char *str, int pos, int arg, int *chars);
+int	ft_printf(const char *str, ...);
+int	ft_c_case(const char *str, int pos, int arg, int *chars);
 
 #endif
