@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 23:10:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/01 00:11:20 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/01 19:34:23 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,5 @@ int	ft_c_case(const char *str, int pos, int arg, int *chars)
 			ft_print_space(str, chars, 0, pos);
 		ft_print_char(c, chars);
 	}
-	return (0);
+	return (1);
 }
