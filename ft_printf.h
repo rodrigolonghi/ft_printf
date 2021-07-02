@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:01 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/06/30 23:48:34 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/01 21:24:24 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@
 
 int	ft_printf(const char *str, ...);
 int	ft_c_case(const char *str, int pos, int arg, int *chars);
+int	ft_s_case(const char *str, int pos, char *arg, int *chars);
 
 #endif
