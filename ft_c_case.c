@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 23:10:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/01 19:34:23 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/02 00:24:00 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	ft_c_case(const char *str, int pos, int arg, int *chars)
 	{
 		ft_print_char(c, chars);
 		if (str[1] == '0')
-			ft_print_zero(str, chars, 2, pos - 1);
+			ft_print_space(str, chars, 2, pos - 1);
 		else
 			ft_print_space(str, chars, 1, pos);
 	}
