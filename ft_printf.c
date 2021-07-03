@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:53 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/01 21:05:31 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/03 18:53:03 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int static	ft_call_functions(const char *str, va_list arg, int *chars, int pos)
 	if (str[pos] == 'c')
 		return (ft_c_case(str, pos, va_arg(arg, int), chars));
 	else if (str[pos] == '%')
-		return (ft_c_case(str, pos, '%', chars));
+		return (ft_percent_case(str, pos, chars));
 	else if (str[pos] == 's')
 		return (ft_s_case(str, pos, va_arg(arg, char *), chars));
 	// else if (str[pos] == 'p')
