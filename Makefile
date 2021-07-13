@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/23 19:44:12 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/07/13 19:29:20 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/07/13 19:37:21 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ NAME = libftprintf.a
 FT = ft_printf.o \
 	ft_c_case.o \
 	ft_percent_case.o \
-	ft_s_case.o
+	ft_s_case.o \
+	ft_d_case.o
 
 all: $(NAME)
 

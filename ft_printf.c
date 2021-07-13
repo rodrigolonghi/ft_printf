@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:53 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/13 19:29:44 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/13 19:41:01 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void static	ft_call_functions(const char *str, va_list arg, int *chars)
 		ft_percent_case(chars);
 	else if (*str == 's')
 		ft_s_case(va_arg(arg, char *), chars);
-	// else if (str == 'd')
-	// 	return (ft_d_case(va_arg(arg, int), chars));
+	else if (*str == 'd')
+		ft_d_case(va_arg(arg, int), chars);
 	// else if (str[pos] == 'p')
 	// 	return (ft_p_case(str, pos, va_arg(arg, void *)));
 	// else if (str[pos] == 'i')
