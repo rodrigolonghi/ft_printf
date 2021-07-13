@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/23 19:44:12 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/07/08 23:10:23 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/07/13 19:29:20 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,7 @@ FLAG = -Wall -Wextra -Werror
 
 NAME = libftprintf.a
 
-FT = ft_find_nbr.o \
-	ft_printf.o \
+FT = ft_printf.o \
 	ft_c_case.o \
 	ft_percent_case.o \
 	ft_s_case.o

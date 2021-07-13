@@ -6,22 +6,22 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:53 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/08 23:40:42 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/13 19:29:44 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int static	ft_call_functions(const char *str, va_list arg, int *chars, int pos)
+void static	ft_call_functions(const char *str, va_list arg, int *chars)
 {
-	if (str[pos] == 'c')
-		return (ft_c_case(str, pos, arg, chars));
-	else if (str[pos] == '%')
-		return (ft_percent_case(str, pos, chars));
-	else if (str[pos] == 's')
-		return (ft_s_case(str, pos, va_arg(arg, char *), chars));
-	// else if (str[pos] == 'd')
-	// 	return (ft_d_case(str, pos, va_arg(arg, int), chars));
+	if (*str == 'c')
+		ft_c_case(va_arg(arg, int), chars);
+	else if (*str == '%')
+		ft_percent_case(chars);
+	else if (*str == 's')
+		ft_s_case(va_arg(arg, char *), chars);
+	// else if (str == 'd')
+	// 	return (ft_d_case(va_arg(arg, int), chars));
 	// else if (str[pos] == 'p')
 	// 	return (ft_p_case(str, pos, va_arg(arg, void *)));
 	// else if (str[pos] == 'i')
@@ -32,22 +32,7 @@ int static	ft_call_functions(const char *str, va_list arg, int *chars, int pos)
 	// 	return (ft_x_case(str, pos, va_arg(arg, void *)));
 	// else if (str[pos] == 'X')
 	// 	return (ft_X_case(str, pos, va_arg(arg, void *)));
-	return (0);
-}
-
-void static	ft_check_args(const char *str, va_list arg, int *chars)
-{
-	int	pos;
-	int	control;
-
-	pos = 0;
-	control = 0;
-	while (str[pos] && control == 0)
-	{
-		control = ft_call_functions(str, arg, chars, pos);
-		pos++;
-	}
-	chars[1] += pos;
+	chars[1]++;
 }
 
 int	ft_printf(const char *str, ...)
@@ -60,7 +45,7 @@ int	ft_printf(const char *str, ...)
 	while (str[chars[1]] != '\0')
 	{
 		if (str[chars[1]] == '%')
-			ft_check_args(str + chars[1] + 1, arg, chars);
+			ft_call_functions(str + chars[1] + 1, arg, chars);
 		else
 		{
 			ft_putchar_fd(str[chars[1]], 1);
