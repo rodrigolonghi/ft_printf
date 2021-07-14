@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 20:22:39 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/13 22:27:30 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/13 22:54:03 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,10 @@ void	ft_p_case(long long int arg, int *chars)
 	while (col < 9)
 	{
 		if (nbr[col] != '\0')
+		{
 			ft_putchar_fd(nbr[col], 1);
+			chars[0]++;
+		}
 		col++;
-		chars[0]++;
 	}
 }
