@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:01 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/13 22:29:59 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/13 22:40:23 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ void	ft_d_case(int arg, int *chars);
 int		ft_putunbr_fd(unsigned int n, int fd);
 void	ft_u_case(unsigned int arg, int *chars);
 void	ft_p_case(long long int arg, int *chars);
+void	ft_x_case(unsigned int arg, int *chars, int uppercase);
 
 #endif

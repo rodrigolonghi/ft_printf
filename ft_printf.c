@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:53 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/13 20:54:44 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/13 22:40:15 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ void static	ft_call_functions(const char *str, va_list arg, int *chars)
 		ft_u_case(va_arg(arg, unsigned int), chars);
 	else if (*str == 'p')
 		ft_p_case(va_arg(arg, long long int), chars);
-	// else if (str[pos] == 'x')
-	// 	return (ft_x_case(str, pos, va_arg(arg, void *)));
-	// else if (str[pos] == 'X')
-	// 	return (ft_X_case(str, pos, va_arg(arg, void *)));
+	else if (*str == 'x')
+		ft_x_case(va_arg(arg, unsigned int), chars, 0);
+	else if (*str == 'X')
+		ft_x_case(va_arg(arg, unsigned int), chars, 1);
 	chars[1]++;
 }
 
