@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:53 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/13 22:40:15 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/14 19:00:58 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void static	ft_call_functions(const char *str, va_list arg, int *chars)
 int	ft_printf(const char *str, ...)
 {
 	int		*chars;
+	int		result;
 	va_list	arg;
 
 	va_start(arg, str);
@@ -52,5 +53,7 @@ int	ft_printf(const char *str, ...)
 		chars[1]++;
 	}
 	va_end(arg);
-	return (chars[0]);
+	result = chars[0];
+	free(chars);
+	return (result);
 }
