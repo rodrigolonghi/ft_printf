@@ -24,7 +24,7 @@ void	ft_percent_case(int *chars);
 void	ft_s_case(char *arg, int *chars);
 void	ft_d_case(int arg, int *chars);
 void	ft_u_case(unsigned int arg, int *chars);
-void	ft_p_case(long long int arg, int *chars);
+void	ft_p_case(unsigned long long int arg, int *chars);
 void	ft_x_case(unsigned int arg, int *chars, int uppercase);
 
 #endif

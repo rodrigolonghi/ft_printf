@@ -25,7 +25,7 @@ void static	ft_call_functions(const char *str, va_list arg, int *chars)
 	else if (*str == 'u')
 		ft_u_case(va_arg(arg, unsigned int), chars);
 	else if (*str == 'p')
-		ft_p_case(va_arg(arg, long long int), chars);
+		ft_p_case(va_arg(arg, unsigned long long int), chars);
 	else if (*str == 'x')
 		ft_x_case(va_arg(arg, unsigned int), chars, 0);
 	else if (*str == 'X')

@@ -41,7 +41,7 @@ void static	ft_print_adress(char *nbr, int *chars)
 	free(nbr);
 }
 
-void	ft_p_case(long long int arg, int *chars)
+void	ft_p_case(unsigned long long int arg, int *chars)
 {
 	char	*hexadecimal_table;
 	int		col;
