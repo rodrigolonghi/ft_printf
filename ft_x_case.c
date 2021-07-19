@@ -6,13 +6,13 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 22:34:48 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/14 21:46:33 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/19 02:35:43 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void static	ft_print_nbr(char *nbr, int *chars)
+static void	ft_print_nbr(char *nbr, int *chars)
 {
 	int	col;
 

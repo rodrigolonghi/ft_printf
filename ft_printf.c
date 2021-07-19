@@ -6,13 +6,13 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 19:51:53 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/14 19:00:58 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/19 02:36:12 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void static	ft_call_functions(const char *str, va_list arg, int *chars)
+static void	ft_call_functions(const char *str, va_list arg, int *chars)
 {
 	if (*str == 'c')
 		ft_c_case(va_arg(arg, int), chars);

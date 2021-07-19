@@ -6,25 +6,13 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 20:22:39 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/14 22:53:09 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/19 02:34:52 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void static	ft_fill_nbr(char *nbr)
-{
-	int	pos;
-
-	pos = 0;
-	while (pos < 16)
-	{
-		nbr[pos] = 'f';
-		pos++;
-	}
-}
-
-void static	ft_print_adress(char *nbr, int *chars)
+static void	ft_print_adress(char *nbr, int *chars)
 {
 	int	col;
 
@@ -38,7 +26,6 @@ void static	ft_print_adress(char *nbr, int *chars)
 		}
 		col++;
 	}
-	free(nbr);
 }
 
 void	ft_p_case(unsigned long long int arg, int *chars)
@@ -54,8 +41,6 @@ void	ft_p_case(unsigned long long int arg, int *chars)
 	chars[0] += 2;
 	if (arg == 0)
 		nbr[0] = '0';
-	else if (arg < 0)
-		ft_fill_nbr(nbr);
 	else
 	{
 		while (arg != 0 && col >= 0)
@@ -66,4 +51,5 @@ void	ft_p_case(unsigned long long int arg, int *chars)
 		}
 	}
 	ft_print_adress(nbr, chars);
+	free(nbr);
 }

@@ -6,13 +6,13 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 19:44:01 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/07/14 21:50:49 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/07/19 02:35:36 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char static	ft_set_number(unsigned int n, int column)
+static char	ft_set_number(unsigned int n, int column)
 {
 	char	number;
 
@@ -22,7 +22,7 @@ char static	ft_set_number(unsigned int n, int column)
 	return (number);
 }
 
-int static	ft_putunbr_fd(unsigned int n, int fd)
+static int	ft_putunbr_fd(unsigned int n, int fd)
 {
 	char	digit[11];
 	int		column;
